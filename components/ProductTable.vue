@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <table>
+  <div class="product-table">
+    <table class="product-table__table">
       <thead>
         <tr>
           <th>ID</th>
@@ -57,20 +57,24 @@ const filteredProducts: ComputedRef<Product[]> = computed(() => {
 });
 </script>
 
-<style scoped>
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+<style scoped lang="scss">
+@import '@/assets/styles/_variables.scss';
 
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
+.product-table {
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
 
-th {
-  background-color: #f2f2f2;
+    th,
+    td {
+      border: 1px solid $color-quaternary;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: $color-tertiary;
+    }
+  }
 }
 </style>

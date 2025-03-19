@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <h1>Страница идентификации</h1>
-    <input v-model="login" placeholder="Логин" />
-    <input v-model="password" type="password" placeholder="Пароль" />
-    <button @click="authenticate">Войти</button>
-    <p v-if="error">{{ error }}</p>
+  <div class="login-page">
+    <h1 class="login-page__title">Страница идентификации</h1>
+    <input v-model="login" placeholder="Логин" class="login-page__input" />
+    <input v-model="password" type="password" placeholder="Пароль" class="login-page__input" />
+    <Button type="primary" @click="authenticate" class="login-page__button">Войти</Button>
+    <p v-if="error" class="login-page__error">{{ error }}</p>
   </div>
 </template>
 
@@ -29,3 +29,31 @@ const authenticate = async () => {
   }
 };
 </script>
+
+<style scoped lang="scss">
+@import '@/assets/styles/_variables.scss';
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $color-quaternary;
+    background-color: $color-secondary;
+    color: $color-font-primary;
+  }
+
+  &__error {
+    color: $color-red;
+    margin-top: 10px;
+  }
+}
+</style>
