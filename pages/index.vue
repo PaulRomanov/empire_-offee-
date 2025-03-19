@@ -10,20 +10,21 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import type { Ref } from '@vue/reactivity';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/store/auth';
 
-const login = ref('');
-const password = ref('');
-const error = ref('');
+const login: Ref<string> = ref('');
+const password: Ref<string> = ref('');
+const error: Ref<string> = ref('');
 const router = useRouter();
 const authStore = useAuthStore();
 
 const authenticate = async () => {
   try {
-    authStore.login(login.value, password.value);
+    await authStore.login(login.value, password.value);
     router.push('/account');
-  } catch (err) {
+  } catch (err: any) {
     error.value = err.message;
   }
 };

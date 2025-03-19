@@ -30,7 +30,7 @@ export const useAuthStore = defineStore('auth', {
         if (process.client) {
           localStorage.removeItem('isAuthenticated');
         }
-        throw new Error('Неверные данные авторизации');
+        throw new Error('Введены неверные данные авторизации. Попробуйте ещё раз');
       }
     },
     logout() {

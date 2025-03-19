@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "category": "Electronics",
+    "price": 1200,
+    "quantity": 10,
+    "status": "In Stock",
+    "date_created": "2025-03-19"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 25,
+    "quantity": 50,
+    "status": "In Stock",
+    "date_created": "2025-03-20"
+  },
+  {
+    "id": 3,
+    "name": "Office Chair",
+    "category": "Furniture",
+    "price": 150,
+    "quantity": 20,
+    "status": "Out of Stock",
+    "date_created": "2025-03-21"
+  },
+  {
+    "id": 4,
+    "name": "Coffee Table",
+    "category": "Furniture",
+    "price": 80,
+    "quantity": 15,
+    "status": "In Stock",
+    "date_created": "2025-03-22"
+  },
+  {
+    "id": 5,
+    "name": "Running Shoes",
+    "category": "Clothing",
+    "price": 90,
+    "quantity": 30,
+    "status": "In Stock",
+    "date_created": "2025-03-23"
+  },
+    {
+    "id": 6,
+    "name": "T-Shirt",
+    "category": "Clothing",
+    "price": 20,
+    "quantity": 100,
+    "status": "In Stock",
+    "date_created": "2025-03-24"
+  },
+    {
+    "id": 7,
+    "name": "Desk Lamp",
+    "category": "Furniture",
+    "price": 45,
+    "quantity": 25,
+    "status": "In Stock",
+    "date_created": "2025-03-25"
+  },
+    {
+    "id": 8,
+    "name": "External Hard Drive",
+    "category": "Electronics",
+    "price": 80,
+    "quantity": 12,
+    "status": "In Stock",
+    "date_created": "2025-03-26"
+  },
+    {
+    "id": 9,
+    "name": "Jeans",
+    "category": "Clothing",
+    "price": 60,
+    "quantity": 40,
+    "status": "In Stock",
+    "date_created": "2025-03-27"
+  },
+    {
+    "id": 10,
+    "name": "Keyboard",
+    "category": "Electronics",
+    "price": 50,
+    "quantity": 18,
+    "status": "Out of Stock",
+    "date_created": "2025-03-28"
+  }
+]
